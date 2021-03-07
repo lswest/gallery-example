@@ -1,3 +1,9 @@
+## Reproducible error repo for bug report
+
+This page **does not** work, and shouldn't be used for anything but debugging the issue.
+
+![error](./error.png)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
