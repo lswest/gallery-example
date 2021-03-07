@@ -1,0 +1,24 @@
+[
+  {
+    "src": "../src/images/assets/gallery/ben-wicks-Is3niRmmlyU-unsplash.jpg",
+    "description": "Example image 1",
+    "categories": [
+      "20 - group 2"
+    ]
+  },
+  {
+    "src": "../src/images/assets/gallery/gustavo-zambelli-FAnbwGjMFv0-unsplash.jpg",
+    "description": "Example image 2",
+    "categories": [
+      "40 - group 1",
+      "20 - group 2"
+    ]
+  },
+  {
+    "src": "../src/images/assets/gallery/tolga-ahmetler-1-N6zmu7CxY-unsplash.jpg",
+    "description": "Example image 3",
+    "categories": [
+      "40 - group 1"
+    ]
+  }
+]

@@ -1,10 +1,38 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const languages = require("./data/languages.js")
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Gallery Example`,
+    description: `An example to highlight an issue with GatsbyImage`,
+    deDescription: `An example to highlight an issue with GatsbyImage`,
+    author: `Lucas Westermann`,
+    creator: `CodeRoot`,
+    languages,
+    siteUrl: `http://example.com`,
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `news`,
+        path: `${__dirname}/data`,
+      },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.app/offline
+    // 'gatsby-plugin-offline',
+  ],
 }
