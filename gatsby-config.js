@@ -1,5 +1,3 @@
-const languages = require("./data/languages.js")
-
 module.exports = {
   siteMetadata: {
     title: `Gallery Example`,
@@ -7,7 +5,6 @@ module.exports = {
     deDescription: `An example to highlight an issue with GatsbyImage`,
     author: `Lucas Westermann`,
     creator: `CodeRoot`,
-    languages,
     siteUrl: `http://example.com`,
   },
   plugins: [
